@@ -1,6 +1,6 @@
 // Your Telegram Bot credentials
-const telegram_bot_id = "7971952794:AAEHtg5B5XbRjUs1UDNk47B7yvJmknsVJCs";
-const chat_id = "@yurei2_Bot2";
+const telegram_bot_id = "token";
+const chat_id = "token";
 
 // Get product ID from URL
 function getProductId() {

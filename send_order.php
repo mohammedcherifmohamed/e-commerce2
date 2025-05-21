@@ -4,8 +4,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Telegram Bot Configuration
-define('TELEGRAM_BOT_TOKEN', '7971952794:AAEHtg5B5XbRjUs1UDNk47B7yvJmknsVJCs'); // Replace with your actual bot token
-define('TELEGRAM_CHAT_ID', '@yurei2_Bot2'); // Replace with your actual chat ID
+define('TELEGRAM_BOT_TOKEN', 'token'); // Replace with your actual bot token
+define('TELEGRAM_CHAT_ID', 'tokren'); // Replace with your actual chat ID
 
 header('Content-Type: application/json');
 

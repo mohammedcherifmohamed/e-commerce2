@@ -63,8 +63,8 @@ if ($contentType === 'application/json') {
             }
 
             // Send Telegram notification for each item
-            $telegram_bot_id = "7971952794:AAEHtg5B5XbRjUs1UDNk47B7yvJmknsVJCs";
-            $chat_id = "@yurei2_Bot2";
+            $telegram_bot_id = "token";
+            $chat_id = "token";
             
             $message = "
 🛍️ New Order!
@@ -199,8 +199,8 @@ Name: {$customer['name']}
         }
 
         // Send Telegram notification
-        $telegram_bot_id = "7971952794:AAEHtg5B5XbRjUs1UDNk47B7yvJmknsVJCs";
-        $chat_id = "@yurei2_Bot2";
+        $telegram_bot_id = "token";
+        $chat_id = "token";
         
         $message = "
 🛍️ New Order!

@@ -1,0 +1,179 @@
+:root {
+    --dark-bg: #121212;
+    --dark-surface: #1E1E1E;
+    --primary-color: #BB86FC;
+    --secondary-color: #03DAC6;
+}
+
+body {
+    background-color: var(--dark-bg) !important;
+    color: #fff !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--dark-surface) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    color: #fff !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title,
+.card-text,
+.card .price {
+    color: #fff !important;
+}
+
+.product-img-container {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.product-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product Details Page Image */
+.product-details-img-container {
+    position: sticky;
+    top: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-img {
+    width: 10 0%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 500px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.modal-content {
+    background-color: var(--dark-surface) !important;
+}
+
+.product-details {
+    background-color: var(--dark-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.product-details h1,
+.product-details h2,
+.product-details h3,
+.product-details h4,
+.product-details h5,
+.product-details h6,
+.product-details p,
+.product-details span {
+    color: #fff !important;
+}
+
+.cart-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Delivery Form Styles */
+.form-control, .form-select {
+    background-color: var(--dark-surface) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(187, 134, 252, 0.25) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-select option {
+    background-color: var(--dark-surface);
+    color: #fff;
+}
+
+.delivery-details {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+}
+
+.was-validated .form-control:valid {
+    border-color: #198754 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+}
+
+.delivery-info {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7) !important;
+} 
